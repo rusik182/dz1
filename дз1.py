@@ -1,65 +1,63 @@
 # Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
-# d = int(input('Введите число от 1 до 7: '))
-# if d >7 or d<1:
-#     print('читайте инструкцию')    
-# elif d==6 or d==7:
-#     print('da')
-# else:
-#     print('no') 
+d = int(input('Введите число от 1 до 7: '))
+if d >7 or d<1:
+    print('читайте инструкцию')    
+elif d==6 or d==7:
+    print('da')
+else:
+    print('no') 
 
 
 # Напишите программу для проверки истинности утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат.
 
-# for x in [True,False]:
-#     for y in [True,False]:
-#         for z in [True,False]:
-#                 print(not (x or y or z) == (not x and not y and not z))
+for x in [True,False]:
+    for y in [True,False]:
+        for z in [True,False]:
+                print(not (x or y or z) == (not x and not y and not z))
             
 
 # Напишите программу, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и выдаёт номер 
 # четверти плоскости, в которой находится эта точка (или на какой оси она находится).
 
-# x = int(input('x = '))
-# y = int(input('y = '))
-# if x > 0 and y > 0:
-#     print(1)
-# if x > 0 and y < 0:
-#     print(4)
-# if x < 0 and y < 0:
-#     print(3)
-# if x < 0 and y > 0:
-#     print(2)
+x = int(input('x = '))
+y = int(input('y = '))
+if x > 0 and y > 0:
+    print(1)
+if x > 0 and y < 0:
+    print(4)
+if x < 0 and y < 0:
+    print(3)
+if x < 0 and y > 0:
+    print(2)
 
 # Hапишите программу, которая по заданному номеру четверти, 
 # показывает диапазон возможных координат точек в этой четверти (x и y).
 
 
-# c = int(input('Введите число от 1 до 4: '))
-# if c == 1:
-#     print('x>0 y>0')
-# if c == 2:
-#     print('x< 0 y>0')
-# if c == 3:
-#     print('x<0 y<0')
-# if c == 4:
-#     print('x>0 y<0')
-# if c < 1 or c > 4:
-#     print('error')
+c = int(input('Введите число от 1 до 4: '))
+if c == 1:
+    print('x>0 y>0')
+if c == 2:
+    print('x< 0 y>0')
+if c == 3:
+    print('x<0 y<0')
+if c == 4:
+    print('x>0 y<0')
+if c < 1 or c > 4:
+    print('error')
 
 #Напишите программу, которая принимает на вход координаты двух точек 
 # и находит расстояние между ними в 2D пространстве.
-
-# x1 = int(input('x1: '))
-# y1 = int(input('y1: '))
-# x2 = int(input('x2: '))
-# y2 = int(input('y2: '))
-# from math import sqrt
-# print('расстояние между A и B: ',round(sqrt((x2 - x1)**2 + (y2 - y1)**2),2))
+x1 = int(input('x1: '))
+y1 = int(input('y1: '))
+x2 = int(input('x2: '))
+y2 = int(input('y2: '))
+print(float(((x2 - x1)**2 + (y2 - y1)**2))**(1/2))
 
 #Напишите программу, которая принимает на вход число и проверяет, кратно ли оно 5 и 10 или 15, но не 30
 
-# a = int(input('a = '))
-# if (a % 5 ==0 or a % 10 == 0 or a % 15 == 0) and a != 30:
-#     print('ok')
-# else:
-#     print('no')
+a = int(input('a = '))
+if (a % 5 ==0 or a % 10 == 0 or a % 15 == 0) and a != 30:
+    print('ok')
+else:
+    print('no')

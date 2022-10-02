@@ -51,8 +51,8 @@
 
 # x1 = int(input('x1: '))
 # y1 = int(input('y1: '))
-# x2 = float(input('x2: '))
-# y2 = float(input('y2: '))
+# x2 = int(input('x2: '))
+# y2 = int(input('y2: '))
 # from math import sqrt
 # print('расстояние между A и B: ',round(sqrt((x2 - x1)**2 + (y2 - y1)**2),2))
 
